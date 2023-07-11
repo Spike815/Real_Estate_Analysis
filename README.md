@@ -3,9 +3,11 @@
 
 ## Description
 This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The dataset is scraped from
-<a href = 'https://www.immoweb.be/en'> Immoweb</a> . More details about the can be found in my previous project <a href = 'https://github.com/Spike815/Immo_Scraping'> Immo_Scraping </a>.
+<a href = 'https://www.immoweb.be/en'> Immoweb</a> . More details about the scraping and dataset can be found in my previous project <a href = 'https://github.com/Spike815/Immo_Scraping'> Immo_Scraping </a>.
 
-The whole data analysis consists two main part. The first part is 
+The whole data analysis consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices. In the below section I have shown some screenshots of the graphs.
+
+## Screenshots
 
 
 
