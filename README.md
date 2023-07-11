@@ -22,6 +22,9 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ### Correlation study of the various factors that may affect housing prices
 ![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
+## Usage
+Execute the Analysis.ipynb notebook to go through the whole data clearning and analysis process.
+
 ## Installation
 This program requires python 3.11.3. 
 In this repository there is a requirements.txt file included. To install te required packages, you can run `python3 -m pip install -r requirements.txt
