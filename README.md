@@ -8,8 +8,9 @@ This project is the preliminary analysis of 19000 properties listed for sale in 
 The whole data analysis consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices. In the below section I have shown some screenshots of the graphs.
 
 ## Screenshots
-![Screenshot](data\overall view of the listed properties on map.png)
-![Screenshot](data\heatmap.png)
+![overall view of the listed properties on map](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/490ae895-0859-4ac5-977c-6044461104b3)
+
+![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
 ## Installation
 This program requires python 3.11.3. 
