@@ -3,12 +3,12 @@
 
 ## Description
 This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The goal was to gather information on house prices for 19,000 properties and conduct a comprehensive analysis on the data.
-### Data scraping
+#### -Data scraping
 The dataset is scraped from
 <a href = 'https://www.immoweb.be/en'> Immoweb</a> .The scraping process involved accessing individual property pages and extracting details such as price, location, size, number of bedrooms, and other relevant features. More details about the scraping and dataset can be found in my previous project <a href = 'https://github.com/Spike815/Immo_Scraping'> Immo_Scraping </a>.
-### Data cleaning
+#### -Data cleaning
 Once the data was scraped, a rigorous data cleaning process was implemented to ensure data quality and consistency. This involved handling missing values, removing duplicate entries, and addressing any inconsistencies or anomalies in the data. The cleaning process aimed to create a clean and reliable dataset for subsequent analysis.
-### Data analysis
+#### -Data analysis
 The whole data analysis consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices.
 
 ## Overview of Analysis
@@ -21,6 +21,9 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ![price per province](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/7d97dfe3-4f02-4f41-84fa-26fca5488bab)
 ### Correlation study of the various factors that may affect housing prices
 ![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
+
+## Usage
+Execute the Analysis.ipynb notebook to go through the whole data clearning and analysis process.
 
 ## Installation
 This program requires python 3.11.3. 
