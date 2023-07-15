@@ -23,7 +23,7 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
 ## Usage
-Execute the Analysis.ipynb notebook to go through the whole data clearning and analysis process.
+Execute the Analysis.ipynb notebook to go through the whole data cleaning and analysis process.
 
 ## Installation
 This program requires python 3.11.3. 
