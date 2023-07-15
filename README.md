@@ -14,7 +14,7 @@ The whole data analysis consists two main part. The first part is about the geog
 ## Overview of Analysis
 The main results of the data analysis are presented through a series of informative graphs and visualizations.
 
-For a more detailed analysis and in-depth exploration of the findings, please refer to the accompanying Jupyter Notebook file, titled Analysis.ipynb in thie repository.
+For a more detailed analysis and in-depth exploration of the findings, please refer to the accompanying Jupyter Notebook file, titled Analysis.ipynb in the repository.
 ### Geographic map about the distributions of the listed properties
 ![overall view of the listed properties on map](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/490ae895-0859-4ac5-977c-6044461104b3)
 ### Detailed graphs to study the average price for each provinces
