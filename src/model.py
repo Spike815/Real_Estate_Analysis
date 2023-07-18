@@ -12,8 +12,6 @@ def train_test(df):
     #convert the dataframe to numpy array
     X=df.drop(columns=columns_to_drop,axis=1).to_numpy()
     y=df.loc[:,"price"].to_numpy().reshape(-1,1)
-   
-    
 
     #Now normalize the data
     # X=preprocessing.normalize(X_raw)
