@@ -17,11 +17,11 @@ The preliminary data exploration / analysis can be found in [Analysis.ipynb](/da
 #### -Machine learning modeling
 The machine learning modeling process can be found in [regression-model.ipynb](/model-building/regression-model.ipynb). It includes feature engineering, data preprocessing, and split the data into training and testing sets. I have built 3 models:
 
-* Linear Regression: Utilize linear regression algorithm to predict property prices or other relevant factors.
+* Linear Regression
 
-* Decision Tree: Implement a decision tree model to make predictions based on the input features.
+* Decision Tree
 
-* XGBoost: Build an XGBoost model, a powerful gradient boosting algorithm, to predict property prices or other factors.
+* XGBoost
 
 
 ## Overview of analysis
