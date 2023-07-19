@@ -2,7 +2,7 @@
 # Real_Estate_Analysis
 
 ## Description
-This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The goal was to gather information on house prices for 19,000 properties and conduct a comprehensive analysis on the data.
+This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The goal was to gather information on house prices for 19,000 properties and conduct a comprehensive analysis on the data.The project consists of several steps, including data scraping, data cleaning, exploratory data analysis (EDA), and machine learning model creation.
 
 #### -Data scraping
 The dataset is scraped from
@@ -14,6 +14,16 @@ Once the data was scraped, a rigorous data cleaning process was implemented to e
 #### -Data exploration
 The preliminary data exploration / analysis can be found in [Analysis.ipynb](/data-exploration/Analysis.ipynb). It consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices.
 
+#### -Machine learning modeling
+The machine learning modeling process can be found in [regression-model.ipynb](/model-building/regression-model.ipynb). It includes feature engineering, data preprocessing, and split the data into training and testing sets. I have built 3 models:
+
+* Linear Regression: Utilize linear regression algorithm to predict property prices or other relevant factors.
+
+* Decision Tree: Implement a decision tree model to make predictions based on the input features.
+
+* XGBoost: Build an XGBoost model, a powerful gradient boosting algorithm, to predict property prices or other factors.
+
+
 ## Overview of analysis
 The main results of the priliminary analysis are presented through a series of informative graphs and visualizations.
 For a more detailed analysis and in-depth exploration of the findings, please refer to the accompanying Jupyter Notebook file, [Analysis.ipynb](/data-exploration/Analysis.ipynb).
@@ -24,15 +34,39 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ### Correlation study of the various factors that may affect housing prices
 ![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
+### Implement Linear regression model
+Train score is 0.588061234204633
+
+Test score is 0.549888815469199
+
+![Linear regression](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/b57660f6-a341-46a5-8c5c-7b51b6c2e1d0)
+
+### Implement Decision tree model
+Train score is 0.793576253189495
+
+Test score is 0.6375768136633881
+
+![Decision tree](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/dfeee9c6-fc96-47d4-ac1b-2a2afb9433bc)
+
+### Implement XGBoost model
+Train score is 0.9437028882953589
+
+Test score is 0.7989333449284743
+
+![XGBoost](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/5bd4e416-3e8b-4a4e-bca2-87d92ecfa233)
+
+
 
 ## Usage
 Execute [Analysis.ipynb](/data-exploration/Analysis.ipynb) to go through the whole data cleaning and analysis process.
+
 Execute [regression-model.ipynb](/model-building/regression-model.ipynb) to go through the whole machine learning model building process.
-Execute `python3 -m pip install -r requirements.txt
+
+Execute `main.py` in terminal to implement the whole data cleaning and modeling, testing process mentioned above.
 
 ## Installation
 This program requires python 3.11.3. 
-In this repository there is a requirements.txt file included. To install te required packages, you can run `python3 -m pip install -r requirements.txt
+In this repository there is a requirements.txt file included. To install te required packages, you can run `python3 -m pip install -r requirements.txt`
 
 To aviod version conflicts, I suggest you do so in a virtual environment.
     
