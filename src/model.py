@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
+import matplotlib.pyplot as plt
 
 def train_test(df,seed,test_size):
     """This function takes the dataframe as parameter. It converts the dataframe\
@@ -21,28 +22,37 @@ def train_test(df,seed,test_size):
     X_train, X_test, y_train, y_test = train_test_split(X,y,random_state=seed, test_size=test_size)
     return X_train, X_test, y_train, y_test
 
-def _show_result(model,X_train, X_test, y_train, y_test):
+def _show_result(model,X_train, X_test, y_train, y_test,title):
     train_score = model.score(X_train,y_train)
     test_score = model.score(X_test,y_test)
+    y_pred = model.predict(X_test)
     print(f"Train score is {train_score}")
     print(f"Test score is {test_score}")
-
+    
+    #plot result
+    a = np.array([0,max(y_test)[0]])
+    plt.scatter(y_test,y_pred)
+    plt.plot(a,a,color="red")
+    plt.xlabel("y_test")
+    plt.ylabel("y_predict")
+    plt.title(title)
+    plt.show()
 
 
 def linear_regression(X_train, X_test, y_train, y_test):
     reg = LinearRegression()
     reg.fit(X_train, y_train)
-    y_pred = reg.predict(X_test)
-    _show_result(reg,X_train, X_test, y_train, y_test)
+    title = "Linear Regression"
+    _show_result(reg,X_train, X_test, y_train, y_test,title)
 
 def decision_tree_regression(X_train, X_test, y_train, y_test):
     reg = DecisionTreeRegressor(min_samples_leaf=10)
     reg.fit(X_train, y_train)
-    y_pred = reg.predict(X_test)
-    _show_result(reg,X_train, X_test, y_train, y_test)
+    title = "Decision Tree"
+    _show_result(reg,X_train, X_test, y_train, y_test,title)
 
 def XGBoost_regression(X_train, X_test, y_train, y_test):
     reg = XGBRegressor()
     reg.fit(X_train, y_train)
-    y_pred = reg.predict(X_test)
-    _show_result(reg,X_train, X_test, y_train, y_test)
+    title = "XGBoost"
+    _show_result(reg,X_train, X_test, y_train, y_test,title)

@@ -9,6 +9,8 @@ df = cleaning(raw_data)
 outliners_to_remove=["number of bedrooms","livable area","living area",
                            "total property area","garden area","total land area","terrace area"]
 df = remove_outliners(df,outliners_to_remove,3)
+#remove extrme prices (price > price.mean() + 4 * std)
+df = remove_outliners(df,["price"],4)
 
 #split the data and create X_train, X_test, y_train, y_test with normalized array
 X_train, X_test, y_train, y_test=train_test(df,seed = 21,test_size=0.2)
