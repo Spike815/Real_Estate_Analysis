@@ -71,7 +71,7 @@ In this repository there is a requirements.txt file included. To install te requ
 To aviod version conflicts, I suggest you do so in a virtual environment.
     
 ## ⌛ Time frame
-This project is done in 30 hours. 
+Data exploration takes 30 working hours, and machine learning modeling takes 24 working hours. 
 
 ## 🚀 About Me
 This project is done by Bo Cao, Junior Data Engineer in Becode, Gent. Here below you can find the contact:
