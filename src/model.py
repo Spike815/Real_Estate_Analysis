@@ -27,9 +27,10 @@ def _show_result(model,X_train, X_test, y_train, y_test,title):
     train_score = model.score(X_train,y_train)
     test_score = model.score(X_test,y_test)
     y_pred = model.predict(X_test)
+    rmse = _rmse(y_pred,y_test)
     print(f"Train score is {train_score}")
     print(f"Test score is {test_score}")
-    
+    print(f"And the RMSE is {rmse}")
     #plot result
     a = np.array([0,max(y_test)[0]])
     plt.scatter(y_test,y_pred)
@@ -39,6 +40,8 @@ def _show_result(model,X_train, X_test, y_train, y_test,title):
     plt.title(title)
     plt.show()
 
+def _rmse(y_pred,y_test):
+    return np.sqrt(np.mean((y_pred-y_test)**2))
 
 def linear_regression(X_train, X_test, y_train, y_test):
     reg = LinearRegression()
@@ -54,7 +57,7 @@ def decision_tree_regression(X_train, X_test, y_train, y_test):
 
 def random_forest_regression(X_train, X_test, y_train, y_test):
     reg =RandomForestRegressor(n_estimators=20)#using a reasonable n_estimators to speed up the process
-    reg.fit(X_train, y_train)
+    reg.fit(X_train, y_train.ravel())
     title = "Random Forest"
     _show_result(reg,X_train, X_test, y_train, y_test,title)
 
