@@ -36,28 +36,29 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ### Correlation study of the various factors that may affect housing prices
 ![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
-### Implement Linear regression model
+## Implementing machine learning models
+### Implementing Linear regression model
 Train score is 0.588061234204633
 
 Test score is 0.549888815469199
 
 ![Linear regression](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/b57660f6-a341-46a5-8c5c-7b51b6c2e1d0)
 
-### Implement Decision tree model
+### Implementing Decision tree model
 Train score is 0.793576253189495
 
 Test score is 0.6375768136633881
 
 ![Decision tree](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/dfeee9c6-fc96-47d4-ac1b-2a2afb9433bc)
 
-### Implement Decision tree model
+### Implementing Random Forest model
 Train score is 0.9673342932331284
 
 Test score is 0.782201260543899
 
 ![Random Forest](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/2c6955d6-35d2-4741-90ba-c6742ed5dd58)
 
-### Implement XGBoost model
+### Implementing XGBoost model
 Train score is 0.9437028882953589
 
 Test score is 0.7989333449284743
