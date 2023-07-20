@@ -15,7 +15,7 @@ Once the data was scraped, a rigorous data cleaning process was implemented to e
 The preliminary data exploration / analysis can be found in [Analysis.ipynb](/data-exploration/Analysis.ipynb). It consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices.
 
 #### -Machine learning modeling
-The machine learning modeling process can be found in [regression-model.ipynb](/model-building/regression-model.ipynb). It includes feature engineering, data preprocessing, and split the data into training and testing sets. I have built 3 models:
+The machine learning modeling process can be found in [regression-model.ipynb](/model-building/regression-model.ipynb). It includes feature engineering, data preprocessing, and split the data into training and testing sets. I have built 4 models:
 
 * Linear Regression
 
@@ -55,6 +55,7 @@ Train score is 0.9673342932331284
 
 Test score is 0.782201260543899
 
+![Random Forest](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/2c6955d6-35d2-4741-90ba-c6742ed5dd58)
 
 ### Implement XGBoost model
 Train score is 0.9437028882953589
