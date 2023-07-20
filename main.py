@@ -1,6 +1,6 @@
 from src.data_cleaning import cleaning
 from src.data_cleaning import remove_outliners
-from src.model import train_test,linear_regression,decision_tree_regression,XGBoost_regression
+from src.model import train_test,linear_regression,decision_tree_regression,random_forest_regression,XGBoost_regression
 import pandas as pd
 
 # import and clean the data
@@ -9,7 +9,8 @@ df = cleaning(raw_data)
 outliners_to_remove=["number of bedrooms","livable area","living area",
                            "total property area","garden area","total land area","terrace area"]
 df = remove_outliners(df,outliners_to_remove,3)
-#remove extrme prices (price > price.mean() + 4 * std)
+
+#remove extreme prices (price > price.mean() + 4 * std)
 df = remove_outliners(df,["price"],4)
 
 #split the data and create X_train, X_test, y_train, y_test with normalized array
@@ -22,6 +23,10 @@ linear_regression(X_train, X_test, y_train, y_test)
 #Use Decision Tree regressor
 print("\n---Using Decision Tree---")
 decision_tree_regression(X_train, X_test, y_train, y_test)
+
+#Use Decision Tree regressor
+print("\n---Using Random Forest---")
+random_forest_regression(X_train, X_test, y_train, y_test)
 
 #Use Decision Tree regressor
 print("\n---Using RGBoost---")

@@ -21,6 +21,8 @@ The machine learning modeling process can be found in [regression-model.ipynb](/
 
 * Decision Tree
 
+* Random Forest
+
 * XGBoost
 
 
@@ -47,6 +49,12 @@ Train score is 0.793576253189495
 Test score is 0.6375768136633881
 
 ![Decision tree](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/dfeee9c6-fc96-47d4-ac1b-2a2afb9433bc)
+
+### Implement Decision tree model
+Train score is 0.9673342932331284
+
+Test score is 0.782201260543899
+
 
 ### Implement XGBoost model
 Train score is 0.9437028882953589
