@@ -1,3 +1,4 @@
 #ignore txt file
 src/__pycache__
 immovenv
+/.vscode
