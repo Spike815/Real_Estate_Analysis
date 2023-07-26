@@ -1,5 +1,5 @@
 
-# Real_Estate_Analysis
+# Real Estate Analysis
 
 ## Description
 This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The goal was to gather information on house prices for 19,000 properties and conduct a comprehensive analysis on the data.The project consists of several steps, including data scraping, data cleaning, exploratory data analysis (EDA), and machine learning model creation.
