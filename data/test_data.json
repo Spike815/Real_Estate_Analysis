@@ -1,0 +1,20 @@
+{
+    "data": {
+        "type of property":"HOUSE",
+         "subtype of property":"MIXED_USE_BUILDING",
+         "number of bedrooms":3,
+         "living area":120,
+         "furnished": true,
+         "terrace":true,
+         "terrace area":15,
+         "garden":true,
+         "garden area":30,
+         "total property area":500,
+         "total land area":800,
+         "number of facades":2,
+         "swimming pool":false,
+         "state of the building":"GOOD",
+         "Province": "Oost-Vlaanderen",
+         "kitchen":"Not equipped",
+         "postalcode":9010}
+  }
