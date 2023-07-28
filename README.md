@@ -2,7 +2,7 @@
 # Real Estate Analysis
 
 ## Description
-This project is the preliminary analysis of 19000 properties listed for sale in Belgium. The goal was to gather information on house prices for 19,000 properties and conduct a comprehensive analysis on the data.The project consists of several steps, including data scraping, data cleaning, exploratory data analysis (EDA), and machine learning model creation.
+This project aims to build and deploy machine learning models for predicting real estate property prices in Belgium. By leveraging historical property data, I seek to create accurate models that can provide insights into property valuation. The project consists of several steps, including data scraping, data cleaning, exploratory data analysis (EDA), and machine learning model creation.
 
 #### -Data scraping
 The dataset is scraped from
@@ -25,6 +25,16 @@ The machine learning modeling process can be found in [regression-model.ipynb](/
 
 * XGBoost
 
+Finally I choose XGBoost as my machine learning model.
+
+
+#### -Deployment
+This project can be deplyed in two ways:
+
+* Local deployment with Docker
+
+* Access the API deployed on render.com
+
 
 ## Overview of analysis
 The main results of the priliminary analysis are presented through a series of informative graphs and visualizations.
@@ -33,32 +43,8 @@ For a more detailed analysis and in-depth exploration of the findings, please re
 ![overall view of the listed properties on map](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/490ae895-0859-4ac5-977c-6044461104b3)
 ### Detailed graphs to study the average price for each provinces
 ![price per province](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/7d97dfe3-4f02-4f41-84fa-26fca5488bab)
-### Correlation study of the various factors that may affect housing prices
-![heatmap](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/f574b4b0-501c-4f0b-be66-9abf5483907d)
 
-## Implementing machine learning models
-### Implementing Linear regression model
-Train score is 0.588061234204633
-
-Test score is 0.549888815469199
-
-![Linear regression](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/b57660f6-a341-46a5-8c5c-7b51b6c2e1d0)
-
-### Implementing Decision tree model
-Train score is 0.793576253189495
-
-Test score is 0.6375768136633881
-
-![Decision tree](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/dfeee9c6-fc96-47d4-ac1b-2a2afb9433bc)
-
-### Implementing Random Forest model
-Train score is 0.9673342932331284
-
-Test score is 0.782201260543899
-
-![Random Forest](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/2c6955d6-35d2-4741-90ba-c6742ed5dd58)
-
-### Implementing XGBoost model
+## Implementing XGBoost model
 Train score is 0.9437028882953589
 
 Test score is 0.7989333449284743
@@ -68,15 +54,42 @@ Test score is 0.7989333449284743
 
 
 ## Usage
-Execute [Analysis.ipynb](/data-exploration/Analysis.ipynb) to go through the whole data cleaning and analysis process.
 
-Execute [regression-model.ipynb](/model-building/regression-model.ipynb) to go through the whole machine learning model building process.
+You can either use the API provided below or locally deploy it with Docker.
 
-Execute `main.py` in terminal to implement the whole data cleaning and modeling, testing process mentioned above.
+### API-Fastapi
+You can access the API running here:
+
+`https://predict-real-estate-price.onrender.com/`
+
+or follow the below link to directly send the property :
+
+`https://predict-real-estate-price.onrender.com/docs/`
+
+### Local deployment
+
+1. Install Docker:
+
+
+Ensure Docker is installed on your machine. If not, you can download and install it from the official Docker website: https://www.docker.com/get-started
+
+2. Build the Docker Image:
+Use the provided Dockerfile in the project's root directory to build the Docker image. Run the following command:
+
+`docker build -t myimage .`
+
+3. Run the Docker Container:
+
+`docker run -d --name mycontainer -p 80:80 myimage`
+
+4. You should now be able to access the model at:
+
+`http://127.0.0.1/docs`
+
 
 ## Installation
 This program requires python 3.11.3. 
-In this repository there is a requirements.txt file included. To install te required packages, you can run `python3 -m pip install -r requirements.txt`
+In this repository there is a requirements.txt file included. To install the required packages, you can run `python3 -m pip install -r requirements.txt`
 
 To aviod version conflicts, I suggest you do so in a virtual environment.
     
