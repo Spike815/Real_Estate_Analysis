@@ -85,7 +85,8 @@ class Property(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"hello": 200}
+    return {"status": 200,
+            "documentation of this api":"/docs"}
 
 
 @app.post("/predict/")
