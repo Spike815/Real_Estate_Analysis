@@ -12,7 +12,7 @@ The dataset is scraped from
 Once the data was scraped, a rigorous data cleaning process was implemented to ensure data quality and consistency. This involved handling missing values, removing duplicate entries, and addressing any inconsistencies or anomalies in the data. The cleaning process aimed to create a clean and reliable dataset for subsequent analysis.
 
 #### -Data exploration
-The preliminary data exploration / analysis can be found in [Analysis.ipynb](/data-exploration/Analysis.ipynb). It consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices.
+The preliminary data exploration / analysis consists two main part. The first part is about the geographic distribution of the listed real estate properties. The second part is the analysis of the various factors that may affect housing prices.
 
 #### -Machine learning modeling
 The machine learning modeling process can be found in [regression-model.ipynb](/model-building/regression-model.ipynb). It includes feature engineering, data preprocessing, and split the data into training and testing sets. I have built 4 models:
@@ -38,7 +38,6 @@ This project can be deplyed in two ways:
 
 ## Overview of analysis
 The main results of the priliminary analysis are presented through a series of informative graphs and visualizations.
-For a more detailed analysis and in-depth exploration of the findings, please refer to the accompanying Jupyter Notebook file, [Analysis.ipynb](/data-exploration/Analysis.ipynb).
 ### Geographic map about the distributions of the listed properties
 ![overall view of the listed properties on map](https://github.com/Spike815/Real_Estate_Analysis/assets/97194496/490ae895-0859-4ac5-977c-6044461104b3)
 ### Detailed graphs to study the average price for each provinces
