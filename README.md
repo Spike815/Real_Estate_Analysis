@@ -66,6 +66,12 @@ or follow the below link to directly send the property :
 
 `https://predict-real-estate-price.onrender.com/docs/`
 
+The response you received should be in this format:
+`{
+  "status": 200,
+  "prediction": "219076 euro"
+}`
+
 ### Local deployment
 
 1. Install Docker:
