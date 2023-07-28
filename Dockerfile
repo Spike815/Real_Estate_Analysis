@@ -12,7 +12,7 @@ COPY ./deployment_requirements.txt /app/deployment_requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r deployment_requirements.txt
 
-COPY ./models/XGB.joblib /app/models/joblib
+COPY ./models /app/models/
 COPY ./src/prediction.py /app/src/prediction.py
 COPY ./src/preprocessing.py /app/src/preprocessing.py
 COPY ./app.py /app/app.py
