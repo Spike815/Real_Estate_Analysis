@@ -2,7 +2,6 @@ import pandas as pd
 # test input
 test = {
     "type_of_property": "HOUSE",
-    "subtype_of_property": "VILLA",
     "number_of_bedrooms": 2,
     "living_area": 60,
     "furnished": 0,
@@ -17,7 +16,7 @@ test = {
     "state_of_the_building": "GOOD",
     "Province": "Oost-Vlaanderen",
     "kitchen": "Not equipped",
-    "postalcode": 90
+    "digits": 90
 }
 
 
